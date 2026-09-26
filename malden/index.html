@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-title" content="Build Housing">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="New housing in Malden: 3 projects in progress, 328 homes, from proposal to move-in."><link rel="canonical" href="https://buildhousing.org/malden/"><meta property="og:type" content="website"><meta property="og:site_name" content="Build Housing"><meta property="og:title" content="New housing in Malden · Build Housing"><meta property="og:description" content="New housing in Malden: 3 projects in progress, 328 homes, from proposal to move-in."><meta property="og:url" content="https://buildhousing.org/malden/"><meta property="og:image" content="https://buildhousing.org/share.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Build Housing"><meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="Build Housing: Malden updates" href="https://buildhousing.org/malden/updates.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin><link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://buildhousing.org/", "name": "Build Housing", "url": "https://buildhousing.org/", "description": "A tracker for new housing projects around Boston, from proposal to move-in.", "inLanguage": "en-US"}, {"@type": "WebPage", "name": "New housing in Malden · Build Housing", "url": "https://buildhousing.org/malden/", "description": "New housing in Malden: 3 projects in progress, 328 homes, from proposal to move-in.", "isPartOf": {"@id": "https://buildhousing.org/"}}, {"@type": "ItemList", "name": "Housing projects in Malden", "url": "https://buildhousing.org/malden/", "numberOfItems": 6, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ten Florence Expansion", "url": "https://buildhousing.org/malden/?project=massbuilds-2592"}, {"@type": "ListItem", "position": 2, "name": "Residences at Malden Square- 27-39 Dartmouth Street, 466-492 Main Street", "url": "https://buildhousing.org/malden/?project=massbuilds-1010"}, {"@type": "ListItem", "position": 3, "name": "126-150 Pleasant Street", "url": "https://buildhousing.org/malden/?project=massbuilds-692"}, {"@type": "ListItem", "position": 4, "name": "960, 968 & 1000 Main Street", "url": "https://buildhousing.org/malden/?project=massbuilds-145"}, {"@type": "ListItem", "position": 5, "name": "121 Madison St.", "url": "https://buildhousing.org/malden/?project=massbuilds-1156"}, {"@type": "ListItem", "position": 6, "name": "William Street Ext. (High Rock)", "url": "https://buildhousing.org/malden/?project=massbuilds-1823"}]}]}</script>
+<title>New housing in Malden · Build Housing</title>
+<style>
+  html { background: #000; }
+  /* Nothing scrolls the page sideways on a phone, whatever runs wide. */
+  body { margin: 0; padding: 2rem 1.25rem 4rem; overflow-x: clip; color: #fff; background: #000;
+         font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; }
+  header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .header-note { color: #666; font-size: .8rem; white-space: nowrap; }
+  .header-note time { margin: 0; font-size: inherit; }
+  /* The newsfeed and the events page, as a pair: the one you're on in white, the other a gray link to it. */
+  .sites { display: flex; gap: .9rem; }
+  .sites a, .sites a:visited { color: #555; font-size: 1.15rem; font-weight: 700; letter-spacing: -.01em; text-decoration: none; }
+  .sites a:hover { color: #999; }
+  .sites a[aria-current], .sites a[aria-current]:hover { color: #fff; }
+
+  /* Its choices at the top of the row, as a link sits, so a page whose choices are buttons (which center
+     their text in the row's height, set by the menu and search) puts them at the same height as one of links. */
+  .filter { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .4rem 1.1rem; margin: -.75rem 0 1.75rem; }
+  .filter button, .filter a { padding: 0; border: 0; background: none; color: #666; font: inherit; font-size: .8rem;
+                              text-decoration: none; cursor: pointer; }
+  .filter button:hover, .filter a:hover { color: #999; text-decoration: none; }
+  .filter button[aria-pressed="true"], .filter a[aria-current="page"] { color: #fff; }
+  .filter .icon { margin-right: .4em; vertical-align: -1px; }
+  @media (max-width: 34rem) { .filter { column-gap: .9rem; } .filter button, .filter a { font-size: .95rem; } }
+  /* Whatever the filter and pager hide stays hidden, however specific the rules that lay it out. */
+  [hidden] { display: none !important; }
+  ul { margin: 0; padding: 0; list-style: none; }
+  /* Rows: the headline first, led by its kind's icon and one line tall, with its details after it, and where it's
+     from at the end of the row, where those line up down the page to be scanned. The parts are set down with
+     spaces between them, which the columns ignore and a phone's line of text breaks at. */
+  .row { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: .6rem; align-items: baseline;
+         padding: .4rem 0; }
+  .row > .icon { align-self: center; }
+  .symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
+  .icon { flex: none; width: 12px; height: 12px; }
+  .source { display: flex; justify-content: flex-end; align-items: center; min-width: 0; max-width: 14rem; color: #666;
+            font-size: .8em; text-align: right; }
+  .source > span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .headline { display: flex; align-items: baseline; min-width: 0; position: relative; }
+  .headline .title { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  /* A headline's preview, opening under it (or over it, near the bottom of the window) after a short hover. */
+  .preview { position: absolute; z-index: 1; top: calc(100% + .5rem); left: -1rem; width: min(34rem, calc(100% + 1rem));
+             box-sizing: border-box; padding: .9rem 1rem; background: #000; border: 1px solid #333; border-radius: 6px;
+             color: #bbb; font-size: .85em; font-weight: normal; line-height: 1.5; white-space: normal; pointer-events: none;
+             visibility: hidden; opacity: 0; transition: opacity .1s, visibility 0s .1s; }
+  .preview.above { top: auto; bottom: calc(100% + .5rem); }
+  .preview p { margin: 0 0 .7em; }
+  .preview p:last-child { margin-bottom: 0; }
+  .preview .full-title { display: none; color: #fff; }
+  .truncated .preview .full-title { display: block; }
+  .headline:not(.truncated) .preview.title-only { display: none; }
+  .headline .title:hover ~ .preview { visibility: visible; opacity: 1; transition: opacity .1s .4s, visibility 0s .4s; }
+  @media (hover: none), (max-width: 34rem) { .preview { display: none; } }
+  /* The search, at the end of the filter's row and as quiet as the filter. */
+  .search { margin-left: auto; width: 10rem; padding: 0 0 .15rem; border: 0; border-bottom: 1px solid #333;
+            border-radius: 0; background: none; color: #fff; font: inherit; font-size: .8rem; outline: none;
+            -webkit-appearance: none; appearance: none; }
+  .search::placeholder { color: #555; }
+  .search:focus { border-bottom-color: #777; }
+  .search::-webkit-search-cancel-button { display: none; }
+  /* A menu beside it (the events' venues, the newsfeed's sources), as quiet as the filter: a small arrow
+     after it, and white once something's chosen. As wide as what's chosen, where the browser can size it so. */
+  .pick { max-width: 12rem; padding: 0 1.05em 0 0; border: 0; border-radius: 0; color: #666;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23666' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right center / .6em;
+          font: inherit; font-size: .8rem; text-overflow: ellipsis; cursor: pointer; field-sizing: content;
+          -webkit-appearance: none; appearance: none; }
+  .pick:hover { color: #999; }
+  .pick.chosen { color: #fff; }
+  .pick:focus-visible { outline: 1px solid #444; outline-offset: 3px; }
+  .pick option { background: #000; color: #fff; }
+  /* The menu and the search, together at the end of the filter's row. On a phone they're on a line of their
+     own under it, from the left, the search taking the rest of it, at 16px, since iPhones zoom in on a smaller
+     field when it's tapped. Neither may push the line wider than the screen: a long name ends in "…" past 60%
+     of it, and the search takes whatever's left. */
+  .finders { display: flex; align-items: baseline; gap: 1.4rem; margin-left: auto; }
+  .finders .search { margin-left: 0; }
+  @media (max-width: 34rem) {
+    .finders { flex-basis: 100%; min-width: 0; gap: 1.1rem; margin: .4rem 0 0; }
+    .finders .search { flex: 1 1 0; min-width: 3rem; width: 0; font-size: 1rem; }
+    .pick { flex: 0 1 auto; min-width: 0; max-width: 60%; font-size: 1rem; }
+  }
+  .pager { display: flex; justify-content: space-between; margin-top: 2.5rem; color: #666; font-size: .8rem; }
+  .pager a, .pager a:visited { color: #999; }
+  .empty { color: #666; font-size: .9rem; }
+  /* Back to the top: a quiet arrow in the corner, faded in once the page has been scrolled a screen or so. */
+  .to-top { position: fixed; z-index: 2; right: max(1.5rem, env(safe-area-inset-right)); bottom: max(1.5rem, env(safe-area-inset-bottom));
+            display: grid; place-items: center; width: 2.25rem; height: 2.25rem; padding: 0; border: 1px solid #262626;
+            border-radius: 50%; background: rgba(0, 0, 0, .8); color: #777; cursor: pointer;
+            opacity: 0; visibility: hidden; transition: opacity .2s, visibility 0s .2s, color .15s, border-color .15s; }
+  .to-top.shown { opacity: 1; visibility: visible; transition: opacity .2s, color .15s, border-color .15s; }
+  .to-top:hover, .to-top:focus-visible { color: #ddd; border-color: #444; outline: none; }
+  .to-top svg { width: 14px; height: 14px; }
+  @media (max-width: 34rem) { .to-top { right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); } }
+  a { color: #fff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 4rem; color: #666; font-size: .8em; }
+  footer p { margin: .4rem 0; }
+  footer a, footer a:visited { color: #999; text-decoration: underline; text-decoration-color: #555; text-underline-offset: .2em; }
+  @media (max-width: 34rem) {
+    /* Too narrow for columns, so a row reads as a line instead, wrapping where a sentence would, with the icon
+       in a slot at the left edge beside its first line: a size that holds its own beside the headline, a clear
+       space after it, and set by the middle of the letters rather than the middle of the line, which sits low
+       by the depth of a descender. The spaces between the parts are where the line breaks, so the room after the
+       headline goes at its end, out of sight when the line breaks there; the small grey parts after it are
+       spaced by their spaces alone. */
+    .row { display: block; padding-left: calc(14px + .7em); }
+    .row > .icon { position: absolute; left: 0; width: 14px; height: 14px; top: calc(.4rem + .72em - 7px); }
+    .headline, .headline .title { display: inline; }
+    .headline .title { white-space: normal; }
+    .headline > .title { margin-right: .3em; }
+    .source { display: inline; max-width: none; text-align: left; }
+    .source > span { display: inline; overflow: visible; white-space: normal; }
+  }
+
+  #map { position: relative; height: 22rem; margin: 0 0 1.25rem; border: 1px solid #222; border-radius: 6px;
+         background: #242426; }
+  /* Full screen: the map the whole of it, without the corners and edge it has in the page. */
+  #map:fullscreen { height: 100%; margin: 0; border: 0; border-radius: 0; }
+  #map.maplibregl-pseudo-fullscreen { height: 100dvh !important; margin: 0; border: 0; border-radius: 0; }
+  @media (max-width: 34rem) { #map { height: 16rem; } }
+  /* Room to see: taller on a tall window, and in line with everything else on the page, whatever its width. */
+  @media (min-height: 50rem) and (min-width: 46rem) { #map { height: 27rem; } }
+  /* Under the map, the filter and the search: the filter's choices on the left, on two lines (the four steps of
+     a project's way, then Complete, Stalled and All), the search on the right, level with the first; on a phone,
+     the choices as they wrap, and the search on a line of its own under them, wide enough for a thumb. */
+  .controls { display: flex; justify-content: space-between; align-items: flex-start; gap: .9rem 2rem; margin: 0 0 1.75rem; }
+  .controls .filter { flex: 0 1 30rem; margin: 0; }
+  .controls .search { flex: 0 0 11rem; margin-left: 0; }
+  @media (max-width: 34rem) {
+    .controls { flex-direction: column; align-items: stretch; }
+    .controls .filter { flex: none; }
+    .controls .search { flex: none; width: 100%; font-size: 1rem; }  /* Stacked, its flex size would be its height. */
+  }
+  /* Recently updated, a line over the map, as Pushpin's Just announced: one of the newest, and the way to the rest. */
+  .fresh { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: .45rem .6rem;
+           margin: 0 0 1.25rem; padding: .7rem 0; font-size: .85rem;
+           border-top: 1px solid #1c1c1c; border-bottom: 1px solid #1c1c1c; }
+  .fresh-list { display: grid; gap: .35rem; min-width: 0; grid-column: 1 / -1; }
+  .fresh-tag { color: #6e6e6e; font-size: .72rem; font-weight: 400; letter-spacing: .07em; text-transform: uppercase; }
+  .spark-mark { width: 12px; height: 12px; margin-right: .45em; vertical-align: -1px; }
+  /* One line, cut short with "…" if it must: as it turns over, a longer one never pushes the page down. */
+  .fresh-one { min-width: 0; overflow: hidden; color: #999; text-overflow: ellipsis; white-space: nowrap; }
+  .fresh-one .icon { margin-right: .5em; vertical-align: -1px; }
+  .fresh.say .icon { color: #8a8a8a; }
+  .fresh-one b { color: #fff; font-weight: 500; }
+  .fresh-none { color: #666; }
+  .fresh-more { color: #888; }
+  .fresh-more:hover, .fresh-one:hover { color: #fff; text-decoration: none; }
+  .fresh-one:hover b { text-decoration: underline; }
+
+  /* The header: the site's name and the page's each kept whole, the page's going to a line of its own when both
+     won't fit beside the time it was updated, which stays level with the first. */
+  header { align-items: baseline; }
+  .sites { flex-wrap: wrap; row-gap: .15rem; min-width: 0; }
+  .sites a, .sites .here { white-space: nowrap; }
+  /* A page's name for itself, after the site's in the header, a slash between them as on Pushpin; on a phone it
+     takes the time it was updated's room. */
+  .sites .here { color: #fff; font-size: 1.15rem; font-weight: 700; letter-spacing: -.01em; }
+  .sites .here::before { content: "/"; margin-right: .5em; color: #444; font-weight: 400; }
+  @media (max-width: 34rem) { header:has(.here:not([hidden])) .header-note { display: none; } }
+  .sites a:not([aria-current]) .city { color: inherit; }
+  /* The home page: the site's name is the page, so the city named after it is said quietly, not as a heading. */
+  .sites a[aria-current="page"] + .here { color: #8a8a8a; font-weight: 500; }
+  .tagline a { color: #bbb; }
+  /* Large projects' bar of four steps, before its town: how far along the project is. */
+  .steps { display: inline-flex; flex: none; gap: 2px; margin-right: .6rem; }
+  .steps i { width: 9px; height: 4px; border-radius: 1px; background: #2a2a2a; }
+  /* The footer, as Pushpin's: set off by a faint line, what the site is, then its pages, towns and sources in
+     short lists under small, faint headings, the towns in two columns. */
+  footer { margin-top: 4.5rem; padding-top: 2.75rem; border-top: 1px solid rgba(255, 255, 255, .09); }
+  .foot-about { max-width: 38rem; margin: 0; color: #999; font-size: .9rem; line-height: 1.6; }
+  .foot-about b { color: #ccc; font-weight: 600; }
+  .site-links { display: grid; grid-template-columns: minmax(0, 10rem) minmax(0, 18rem) minmax(0, 10rem) minmax(0, 11rem);
+                gap: 1.75rem 2.5rem; margin: 2.25rem 0 2rem; }
+  .site-links h2 { margin: 0 0 .7rem; color: #555; font-size: .65rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+  .site-links ul { display: grid; gap: .45rem; }
+  /* The towns down one column, then the next, in the order they're listed on the home page. */
+  .site-links .towns ul { display: block; columns: 2; column-gap: 1.5rem; }
+  .site-links .towns li { margin-bottom: .45rem; break-inside: avoid; }
+  footer .site-links a, footer .site-links a:visited { color: #999; font-size: .95rem; text-decoration: none; }
+  footer .site-links a:hover { color: #fff; }
+  footer .site-links a[aria-current="page"] { color: #fff; }
+  @media (max-width: 34rem) {
+    .site-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .site-links .towns { grid-column: 1 / -1; order: 3; }
+  }
+  .from .to-town { margin-left: .4em; color: #999; text-decoration: none; }
+  .from .to-town:hover { color: #fff; }
+  /* Have your say, under Recently updated: one band with it, the line between them shared. */
+  .fresh + .fresh.say { margin-top: -1.25rem; border-top: 0; }
+  /* A project's soonest comment deadline or meeting, a quiet tag after its details. */
+  .say-tag { flex: none; align-self: center; margin-left: .6em; padding: .05rem .45rem; border: 1px solid #3a3a3a;
+             border-radius: 999px; color: #bbb; font-size: .72rem; line-height: 1.4; white-space: nowrap; }
+  /* In a project's panel: what last happened to it, and its open comment period and meetings, each a link to
+     comment or join. */
+  .panel-say, .panel-change { margin: 0 0 1.1rem; padding: .7rem .85rem; border: 1px solid #2a2a2a; border-radius: 6px; }
+  .panel-say[hidden], .panel-change[hidden] { display: none; }
+  .panel-change p { margin: 0; color: #ddd; font-size: .88rem; }
+  .panel-say h3, .panel-change h3 { margin: 0 0 .4rem; color: #888; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .panel-say ul { display: grid; gap: .3rem; }
+  .panel-say a { color: #eee; font-size: .88rem; }
+  /* How to be heard, under Have your say, and the lines that offer a calendar or a feed. */
+  .how { max-width: 42rem; margin: 2.25rem 0 0; color: #b4b4b4; font-size: .9rem; line-height: 1.65; }
+  .how h2 { margin: 0 0 .5rem; color: #eee; font-size: 1rem; }
+  .how h3 { margin: 1.9rem 0 0; color: #eee; font-size: .95rem; }
+  .how p, .how ul { margin: 0 0 .7rem; }
+  .how ul { display: grid; gap: .45rem; padding-left: 1.1rem; list-style: disc; }
+  .how b { color: #e2e2e2; font-weight: 600; }
+  .how a, p.follow a { color: #cfcfcf; }
+  .how a:hover, p.follow a:hover { color: #fff; }
+  p.follow, .how-follow { margin: 1.75rem 0 .5rem; color: #999; font-size: .85rem; }
+  /* The one thing to do on this page, said as a button, with the feed beside it. */
+  .how p.how-do { display: flex; flex-wrap: wrap; gap: .75rem .5rem; margin: 1.6rem 0 1.3rem; }
+  .how-do .do { display: inline-flex; align-items: center; gap: .45rem; padding: .4rem .9rem; border: 1px solid #333;
+                border-radius: 999px; color: #ddd; font-size: .9rem; text-decoration: none; }
+  .how-do .do:hover, .how-do .do:focus-visible { border-color: #888; color: #fff; outline: none; }
+  .how-do .primary { border-color: #eee; background: #eee; color: #000; font-weight: 600; }
+  .how-do .primary:hover, .how-do .primary:focus-visible { background: #fff; color: #000; }
+  .how-do .primary svg { width: 1em; height: 1em; }
+  .how p.how-follow { margin: 0; }
+  .panel-say .say-how { margin: .15rem 0 .1rem; color: #999; font-size: .8rem; line-height: 1.5; }
+  /* A page's heading: the header says the same in its own way, so this is for search engines and screen readers. */
+  .page-heading { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+                  clip-path: inset(50%); white-space: nowrap; }
+  /* What a town's page says about its town, under the line that says what it is. */
+  /* What the site is, under its name. */
+  .intro { margin: -1.25rem 0 1.25rem; }
+  /* On as many lines as it takes, rather than cut short: the home page's fits on one. */
+  .tagline { margin: 0; color: #888; font-size: .9rem; }
+  .sites .city { color: #777; }
+  /* The site's mark, before its name. */
+  .sites a { display: inline-flex; align-items: center; }
+  .sites .mark { width: 1.05em; height: 1.05em; margin-right: .42em; }
+  @media (max-width: 34rem) {
+    .tagline { font-size: .8rem; }
+  }
+  /* The map's controls, notes and credits, quiet and dark like the page. Each is written from #map, so they
+     hold whether MapLibre's own stylesheet has arrived yet or not (it's fetched with the map, after these). */
+  #map .maplibregl-map { font: inherit; }
+  #map .map-hint { position: absolute; left: 0; bottom: 0; z-index: 2; }
+  /* The key to the dots' colours, which the page has no room for and full screen has: only there. */
+  #map .map-key { position: absolute; top: 0; right: 0; z-index: 2; display: none; }
+  #map:fullscreen .map-key { display: grid; }
+  #map.maplibregl-pseudo-fullscreen .map-key { display: grid; }
+  #map .maplibregl-popup-content { padding: .7rem .9rem; border: 1px solid #333; border-radius: 6px; background: #111; color: #ddd;
+                              font-size: .85rem; line-height: 1.4; box-shadow: none; }
+  #map .maplibregl-popup-content a { color: #fff; }
+  #map .maplibregl-popup-content .muted { color: #888; }
+  #map .maplibregl-popup-close-button { color: #666; font-size: 1rem; }
+  /* The arrow to its dot, whichever side the note opens on (MapLibre picks the side with room), in the note's own
+     color, so it reads as part of it. */
+  #map .maplibregl-popup-anchor-bottom .maplibregl-popup-tip,
+  #map .maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip,
+  #map .maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip { border-top-color: #111; }
+  #map .maplibregl-popup-anchor-top .maplibregl-popup-tip,
+  #map .maplibregl-popup-anchor-top-left .maplibregl-popup-tip,
+  #map .maplibregl-popup-anchor-top-right .maplibregl-popup-tip { border-bottom-color: #111; }
+  #map .maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: #111; }
+  #map .maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: #111; }
+  /* The map's buttons: a dark pane over the map, its marks gray until they're pointed at. MapLibre draws them
+     black on white, so each mark is turned about (invert) rather than replaced. */
+  #map .maplibregl-ctrl-group { border: 1px solid #2c2c2e; border-radius: 6px; overflow: hidden;
+                           background: rgba(16, 16, 17, .82); box-shadow: none !important;
+                           -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  #map .maplibregl-ctrl-group button + button { border-top: 1px solid #2c2c2e; }
+  #map .maplibregl-ctrl-group button .maplibregl-ctrl-icon { filter: invert(.58); transition: filter .15s; }
+  #map .maplibregl-ctrl-group button:hover { background: rgba(255, 255, 255, .06); }
+  #map .maplibregl-ctrl-group button:hover .maplibregl-ctrl-icon { filter: invert(.92); }
+  #map .maplibregl-ctrl-group button:active { background: rgba(255, 255, 255, .1); }
+  /* No blue ring (which the mark's invert would turn orange); a quiet one from the keyboard instead. */
+  #map .maplibregl-ctrl-group button:focus { box-shadow: none; }
+  #map .maplibregl-ctrl-group button:focus-visible { box-shadow: inset 0 0 0 1px #6a6a6a; }
+  #map .maplibregl-ctrl-group button:disabled .maplibregl-ctrl-icon { filter: invert(.3); }
+  /* The credits: folded, only a small, faint ⓘ with nothing behind it; opened, a dark band. Its icon is drawn here
+     in gray rather than MapLibre's black inverted, which also turned the blue ring it's given when focused orange;
+     from the keyboard it gets a quiet ring of its own instead. */
+  #map .maplibregl-ctrl-attrib, #map .maplibregl-ctrl-attrib.maplibregl-compact { background: none; color: #555; font-size: 9px; }
+  /* Opened, its line of credits centered in the band, level with the ⓘ at its end. */
+  #map .maplibregl-ctrl-attrib.maplibregl-compact-show { display: flex; align-items: center; box-sizing: border-box; min-height: 24px;
+                                                    padding-top: 0; padding-bottom: 0; background: rgba(0, 0, 0, .6); }
+  #map .maplibregl-ctrl-attrib a { color: #666; }
+  #map .maplibregl-ctrl-attrib-button, #map .maplibregl-ctrl-attrib.maplibregl-compact-show .maplibregl-ctrl-attrib-button {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23888' fill-rule='evenodd' d='M4 10a6 6 0 1 0 12 0 6 6 0 1 0-12 0m5-3a1 1 0 1 0 2 0 1 1 0 1 0-2 0m0 3a1 1 0 1 1 2 0v3a1 1 0 1 1-2 0'/%3E%3C/svg%3E") center / 16px no-repeat;
+    opacity: .45; transition: opacity .15s; }
+  #map .maplibregl-ctrl-attrib-button:hover, #map .maplibregl-ctrl-attrib.maplibregl-compact-show .maplibregl-ctrl-attrib-button { opacity: .8; }
+  #map .maplibregl-ctrl-attrib-button:focus { box-shadow: none; }
+  #map .maplibregl-ctrl-attrib-button:focus-visible { box-shadow: 0 0 0 1px #555; opacity: .8; }
+  /* While the map loads, a quiet note in its middle, fading in only if loading takes a moment. */
+  .map-loading { position: absolute; inset: 0; z-index: 1; display: grid; place-items: center; color: #666; font-size: .85rem;
+                 pointer-events: none; animation: appear .3s ease-out .4s both; }
+  /* What the map is leaving out at this zoom, quiet in its corner. */
+  .map-hint { margin: 0 0 .45rem .55rem !important; padding: .1rem .45rem; border-radius: 3px; background: rgba(0, 0, 0, .65);
+              color: #888; font-size: .72rem; pointer-events: none; }
+  .map-hint:empty { display: none; }
+  .map-key { gap: .3rem; margin: .6rem .6rem 0 0; padding: .55rem .7rem; border: 1px solid #2a2a2a; border-radius: 5px;
+             background: rgba(0, 0, 0, .72); color: #bbb; font-size: .75rem; pointer-events: none; }
+  .map-key > span { display: flex; align-items: center; gap: .45rem; }
+  /* A ring, as the map draws them. */
+  .map-key i { flex: none; width: 9px; height: 9px; border: 1.5px solid currentColor; border-radius: 50%; }
+  .panel-pill .icon { width: 12px; height: 12px; }
+  main > details { border-top: 1px solid #1c1c1c; }
+  /* On a phone the search sits right above the first list, its own line and the list's reading as a pair. */
+  @media (max-width: 34rem) { main > details:first-of-type { border-top: 0; } }
+  /* A list's heading kept whole, and its count on the next line when both won't fit on one. */
+  main > details > summary .town { white-space: nowrap; }
+  main > details > summary .count { margin-left: auto; }
+  main > details > summary { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .1rem 1rem; padding: .8rem 0;
+            cursor: pointer; list-style: none; font-weight: 700; }
+  main > details > summary::-webkit-details-marker { display: none; }
+  /* An open list's heading stays at the top of the window while its projects scroll under it, until the next
+     list's pushes it up; black behind it, so they're hidden there, and a faint line under it once it's stuck. */
+  main > details[open] > summary { position: sticky; top: 0; z-index: 1; background: #000; transition: box-shadow .15s; }
+  main > details[open] > summary.stuck { box-shadow: 0 1px 0 #262626; }
+  /* A chevron drawn to a square and turned about its middle, so open or shut it sits level with the town's name
+     (a "›" turned with its line of text drops below it). */
+  main > details > summary::before { content: ""; flex: none; align-self: center; width: 12px; height: 12px; margin-right: .1rem;
+                    background: #666; transition: transform .15s;
+                    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M4.5 2.5L8 6l-3.5 3.5' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+                    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M4.5 2.5L8 6l-3.5 3.5' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
+  main > details > summary:hover::before { background: #999; }
+  main > details[open] > summary::before { transform: rotate(90deg); }
+  @media (prefers-reduced-motion: reduce) { summary::before { transition: none; } }
+  main > details > summary .town { flex: 1; }
+  main > details > summary .count { color: #666; font-size: .8rem; font-weight: normal; }
+  main > details > ul { padding-bottom: 1rem; }
+  main > details > summary:has(+ .from) { padding-bottom: .5rem; }
+  .from { margin: 0 0 .6rem; color: #666; font-size: .8rem; }
+  .from a { color: #999; text-decoration: underline; text-decoration-color: #555; text-underline-offset: .2em; }
+  /* A project's name keeps its room, up to most of the row; what follows it is cut short first. */
+  .row .headline .title { flex-shrink: 0; max-width: 70%; }
+  .row .details { flex: 0 1 auto; min-width: 0; margin-left: .6em; overflow: hidden; color: #666; font-size: .8em;
+                  white-space: nowrap; text-overflow: ellipsis; }
+  .row .note { grid-column: 2 / -1; margin: -.2rem 0 0; color: #999; font-size: .8em; }
+  .row { cursor: pointer; }
+  /* The row under the pointer, a faint band just darker than the one left on the project last opened; where a
+     pointer hovers only, since on a touch screen the last row tapped would stay lit. */
+  @media (hover: hover) and (pointer: fine) {
+    .row { transition: background-color .12s, box-shadow .12s; }
+    .row:hover { background: #0f0f0f; box-shadow: -.5rem 0 #0f0f0f, .5rem 0 #0f0f0f; }
+    /* The row whose dot is under the pointer on the map, lit the same way. */
+    .row.near { background: #0f0f0f; box-shadow: -.5rem 0 #0f0f0f, .5rem 0 #0f0f0f; }
+  }
+  /* The project last opened, a faint band behind its row, reaching a little past the text on either side. */
+  .row.lit { background: #141414; box-shadow: -.5rem 0 #141414, .5rem 0 #141414; }
+  /* A project's panel, in from the right, as Pushpin's listings open: a sheet up from the bottom on a phone. */
+  body.viewing { overflow: hidden; }
+  dialog.project { width: min(32rem, 100%); height: 100dvh; max-height: none; margin: 0 0 0 auto; box-sizing: border-box;
+                   overflow: hidden; padding: 0; border: 0; border-left: 1px solid #262626; border-radius: 0;
+                   background: #0b0b0b; color: #ddd; box-shadow: -1px 0 40px rgba(0, 0, 0, .5); font-size: .95rem; line-height: 1.5; }
+  dialog.project::backdrop { background: rgba(0, 0, 0, .6); }
+  dialog.project[open] { display: flex; flex-direction: column; animation: slide .22s ease-out; }
+  @keyframes slide { from { transform: translateX(100%); } }
+  @keyframes appear { from { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { dialog.project[open] { animation: appear .15s ease-out; } }
+  .panel-body { flex: 1; min-height: 0; overflow: auto; display: flex; flex-direction: column; padding: 3.4rem 1.5rem 1.5rem; }
+  .panel-body > * { flex: none; }
+  dialog.project.shows-picture .panel-body { padding-top: 1.4rem; }
+  .panel-tools { position: absolute; top: .85rem; right: .85rem; z-index: 1; display: flex; gap: .2rem; }
+  .panel-tools button { display: grid; place-items: center; width: 2rem; height: 2rem; padding: 0; border: 0; border-radius: 50%;
+                        background: none; color: #888; cursor: pointer; transition: background-color .15s, color .15s; }
+  .panel-tools button:hover, .panel-tools button:focus-visible { background: #262626; color: #fff; outline: none; }
+  .panel-tools button:disabled { visibility: hidden; transition: none; }
+  .panel-tools svg { width: 16px; height: 16px; }
+  dialog.project.shows-picture .panel-tools button { background: rgba(0, 0, 0, .6); color: #fff; }
+  dialog.project.shows-picture .panel-tools button:hover:not(:disabled) { background: rgba(0, 0, 0, .9); }
+  .panel-image { position: relative; aspect-ratio: 16 / 10; margin: -1.4rem -1.5rem 1.1rem; overflow: hidden; background: #151515; }
+  .panel-image img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s ease-out; }
+  .panel-image.loaded img { opacity: 1; }
+  .panel-credit { position: absolute; right: 0; bottom: 0; left: 0; padding: 1.6rem .85rem .5rem; color: #cfcfcf;
+                  font-size: .72rem; text-align: right; text-shadow: 0 1px 2px #000;
+                  background: linear-gradient(to top, rgba(0, 0, 0, .55), transparent); pointer-events: none; }
+  .panel-credit[hidden] { display: none; }
+  .panel-image:not(.loaded) { background: linear-gradient(100deg, #151515 40%, #1d1d1d 50%, #151515 60%) 0 0 / 250% 100%;
+                              animation: shimmer 1.6s linear infinite; }
+  @keyframes shimmer { from { background-position: 100% 0; } to { background-position: 0 0; } }
+  .panel-where { margin: 0 2.5rem .4rem 0; color: #888; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .panel-title { margin: 0 2rem .3rem 0; color: #fff; font-size: 1.35rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.25; }
+  .panel-pills { display: flex; flex-wrap: wrap; gap: .4rem; margin: .45rem 0 .9rem; }
+  .panel-pill { display: inline-flex; align-items: center; gap: .4rem; padding: .15rem .6rem; border-radius: 999px;
+                background: #1c1c1c; color: #eee; font-size: .8rem; font-weight: 600; }
+  .panel-note { margin: 0 0 1rem; padding: .6rem .8rem; border-left: 2px solid #555; background: #141414; color: #ddd; font-size: .9rem; }
+  .panel-note:empty { display: none; }
+  /* No gap between the columns, so each line runs unbroken across both; the room is in the label's own cell. */
+  .panel-facts { display: grid; grid-template-columns: auto 1fr; margin: 0 0 1.1rem; font-size: .85rem; }
+  .panel-facts dt, .panel-facts dd { margin: 0; padding: .45rem 0; border-top: 1px solid #1c1c1c; }
+  .panel-facts dt { padding-right: 1rem; color: #777; }
+  .panel-facts dd { color: #ddd; }
+  .panel-about p { margin: 0 0 .8em; color: #bbb; }
+  /* The way to its source on a line of its own, the rest under it. */
+  .panel-foot { display: flex; flex-wrap: wrap; gap: .6rem .5rem; margin-top: auto; padding-top: 1.4rem; }
+  .panel-break { flex-basis: 100%; height: 0; }
+  .panel-foot a, .panel-foot button { display: inline-flex; align-items: center; padding: .4rem .9rem; border: 1px solid #333;
+                border-radius: 999px; background: none; color: #ddd; font: inherit; font-size: .9rem; cursor: pointer; text-decoration: none; }
+  .panel-foot a:hover, .panel-foot button:hover, .panel-foot a:focus-visible, .panel-foot button:focus-visible {
+    border-color: #888; color: #fff; outline: none; text-decoration: none; }
+  .panel-foot .primary { border-color: #eee; background: #eee; color: #000; font-weight: 600; }
+  .panel-foot .primary:hover, .panel-foot .primary:focus-visible { background: #fff; color: #000; }
+  .panel-updated { width: 100%; margin: .6rem 0 0; color: #666; font-size: .8rem; }
+  @media (max-width: 34rem) {
+    dialog.project { width: 100%; max-width: 100%; height: auto; max-height: 88dvh; margin: auto 0 0;
+                     border: 1px solid #262626; border-width: 1px 0 0; border-radius: 16px 16px 0 0; }
+    .panel-body { padding: 3.2rem 1.25rem 1.5rem; }
+    dialog.project.shows-picture .panel-body { padding-top: 1.25rem; }
+    .panel-image { margin: -1.25rem -1.25rem 1rem; border-radius: 15px 15px 0 0; }
+    .panel-tools { top: .75rem; right: .75rem; gap: .9rem; }
+    .panel-tools button { width: 2.5rem; height: 2.5rem; }
+    dialog.project[open] { animation: sheet .22s ease-out; }
+    @keyframes sheet { from { transform: translateY(100%); } }
+  }
+  @media (max-width: 34rem) {
+    .row .details { white-space: normal; }
+    .row .note { margin: .15rem 0 0; }
+    .row .details { margin-left: 0; }
+    .row .details::after { content: " ·"; }
+  }
+</style>
+</head>
+<body>
+<svg class="symbols" aria-hidden="true"><symbol id="icon-active" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.25"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor" stroke="none"/></g></symbol><symbol id="icon-proposed" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.25 1.75H4.5A1.5 1.5 0 0 0 3 3.25v9.5a1.5 1.5 0 0 0 1.5 1.5h7a1.5 1.5 0 0 0 1.5-1.5V5.5z"/><path d="M9.25 1.75V5.5H13M5.75 8.5h4.5M5.75 11h2.75"/></g></symbol><symbol id="icon-approved" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.25"/><path d="M5.25 8.25l2 2 3.5-4"/></g></symbol><symbol id="icon-under-construction" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 2.25h3l3.25 10.5h-9.5z"/><path d="M5.35 6.5h5.3M4.55 9.25h6.9"/><path d="M1.75 13.75h12.5"/></g></symbol><symbol id="icon-complete" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 7.5L8 2.5l5.75 5"/><path d="M3.75 6.25v7.5h8.5v-7.5"/><path d="M6.75 13.75v-3.5h2.5v3.5"/></g></symbol><symbol id="icon-stalled" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.25"/><path d="M6.5 5.75v4.5M9.5 5.75v4.5"/></g></symbol><symbol id="icon-all" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></g></symbol><symbol id="icon-comment" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.75 8.25c0 2.62-2.58 4.75-5.75 4.75a7 7 0 0 1-1.63-.19l-3.37 1.44 1-2.66a4.4 4.4 0 0 1-1.75-3.34c0-2.62 2.58-4.75 5.75-4.75s5.75 2.13 5.75 4.75z"/></g></symbol><symbol id="icon-meeting" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.25" y="3.5" width="11.5" height="10.25" rx="1.5"/><path d="M2.25 6.75h11.5M5.5 1.75v3M10.5 1.75v3"/></g></symbol></svg>
+<main>
+<header><nav class="sites" aria-label="Sites"><a href="/"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8"/><path d="M13 7l0 .01"/><path d="M17 7l0 .01"/><path d="M17 11l0 .01"/><path d="M17 15l0 .01"/></g></svg>Build Housing</a><span class="here">Malden</span></nav><span class="header-note">Updated <time class="updated" datetime="2026-09-26T21:32:14.266651+00:00">Sep 26</time></span></header>
+<h1 class="page-heading">New housing in Malden</h1><div class="intro"><p class="tagline">Malden has 3 housing projects under way, 328 homes in all: 3 proposed, the largest Residences at Malden Square- 27-39 Dartmouth Street, 466-492 Main Street (195 homes), and 3 finished since 2020. From MAPC’s MassBuilds, updated Feb 2021. <a href="/">All towns →</a></p></div><p class="fresh"><span class="fresh-tag"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2z"/><path d="M16 6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2z"/><path d="M9 18a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z"/></g></svg>Recently updated</span><a class="fresh-more" href="/recent/">See all →</a><span class="fresh-list"><span class="fresh-one fresh-none">Nothing’s changed in the last 90 days</span></span></p><p class="fresh say"><span class="fresh-tag"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a3 3 0 0 1 0 6"/><path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5"/><path d="M12 8h0l4.524 -3.77a.9 .9 0 0 1 1.476 .692v12.156a.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8"/></g></svg>Have your say</span><a class="fresh-more" href="/have-your-say/">See all →</a><span class="fresh-list"><span class="fresh-one fresh-none">Malden doesn’t publish comment periods or meetings</span></span></p><div id="map" data-fit></div><div class="controls"><div class="filter"><button type="button" data-show="active" aria-pressed="true"><span><svg class="icon" aria-hidden="true"><use href="#icon-active"/></svg></span>In progress</button><button type="button" data-show="proposed" aria-pressed="false"><span style="color:#adadad"><svg class="icon" aria-hidden="true"><use href="#icon-proposed"/></svg></span>Proposed</button><button type="button" data-show="approved" aria-pressed="false"><span style="color:#e0a93b"><svg class="icon" aria-hidden="true"><use href="#icon-approved"/></svg></span>Approved</button><button type="button" data-show="under construction" aria-pressed="false"><span style="color:#4c9be8"><svg class="icon" aria-hidden="true"><use href="#icon-under-construction"/></svg></span>Under construction</button><button type="button" data-show="complete" aria-pressed="false"><span style="color:#55b86a"><svg class="icon" aria-hidden="true"><use href="#icon-complete"/></svg></span>Complete</button><button type="button" data-show="stalled" aria-pressed="false"><span style="color:#d65a50"><svg class="icon" aria-hidden="true"><use href="#icon-stalled"/></svg></span>Stalled</button><button type="button" data-show="all" aria-pressed="false"><span><svg class="icon" aria-hidden="true"><use href="#icon-all"/></svg></span>All</button></div><input class="search" type="search" placeholder="Search" aria-label="Search" autocomplete="off" spellcheck="false"></div><details open><summary><span class="town">Malden</span><span class="count"></span></summary><p class="from">From <a href="https://www.massbuilds.com/">MassBuilds</a>, last updated here Feb 2021, so it may be out of date.<a hidden>New housing in Malden →</a></p><ul><li class="row" id="massbuilds-2592" data-status="complete" data-units="22" data-lat="42.42827" data-lon="-71.07334" data-words="ten florence expansion downtown malden 5 story residential addition to completed 6 story residential by dosi dough realty trust
+proposed denied in 2014 and 2015 and approved in 2017
+14 units one-br (640-770sf), 8 two-br (980-1150sf)
+
+
+***the apartments appear to have been completed in late 2020
+
+http://tenflorence.com/ "><svg style="color:#55b86a" class="icon" role="img" aria-label="Complete"><use href="#icon-complete"/></svg><span class="headline"><a class="title" href="?project=massbuilds-2592">Ten Florence Expansion</a> <span class="details">22 homes · complete</span></span> <span class="source"><span>Downtown · Feb 2021</span></span></li><li class="row" id="massbuilds-1010" data-status="proposed" data-units="195" data-lat="42.42718" data-lon="-71.06779" data-words="residences at malden square- 27-39 dartmouth street, 466-492 main street downtown malden tod apartments "><svg style="color:#adadad" class="icon" role="img" aria-label="Proposed"><use href="#icon-proposed"/></svg><span class="headline"><a class="title" href="?project=massbuilds-1010">Residences at Malden Square- 27-39 Dartmouth Street, 466-492 Main Street</a> <span class="details">195 homes · proposed</span></span> <span class="source"><span>Downtown · Mar 2020</span></span></li><li class="row" id="massbuilds-692" data-status="complete" data-units="69" data-lat="42.42661" data-lon="-71.07089" data-words="126-150 pleasant street downtown malden by 126-150 pleasant street associates llc
+redevelopment of mostly vacant 1 story 7,330sf building, demolished for new 6 story building, and conversion of 5 story  to 4 story building with 6,300sf retail.
+69 units total (42 on 6 story building)-13 studios ~550sf, 26 one-br ~725sf, 30 two-br ~1,050sf. 
+42 1 story garage and below grade parking "><svg style="color:#55b86a" class="icon" role="img" aria-label="Complete"><use href="#icon-complete"/></svg><span class="headline"><a class="title" href="?project=massbuilds-692">126-150 Pleasant Street</a> <span class="details">69 homes · complete</span></span> <span class="source"><span>Downtown · Mar 2020</span></span></li><li class="row" id="massbuilds-145" data-status="complete" data-units="8" data-lat="42.43724" data-lon="-71.06749" data-words="960, 968 &amp; 1000 main street island hill malden townhouse condominiums "><svg style="color:#55b86a" class="icon" role="img" aria-label="Complete"><use href="#icon-complete"/></svg><span class="headline"><a class="title" href="?project=massbuilds-145">960, 968 &amp; 1000 Main Street</a> <span class="details">8 homes · complete</span></span> <span class="source"><span>Island Hill · Feb 2020</span></span></li><li class="row" id="massbuilds-1156" data-status="proposed" data-units="76" data-lat="42.42115" data-lon="-71.07025" data-words="121 madison st. bell rock malden property has been rezoned and permitted for up to 76 units with 152 parking spaces. all of the legal work is complete and the property has a clean 21e. malden redevlopment authority is offering incentives on the property. "><svg style="color:#adadad" class="icon" role="img" aria-label="Proposed"><use href="#icon-proposed"/></svg><span class="headline"><a class="title" href="?project=massbuilds-1156">121 Madison St.</a> <span class="details">76 homes · proposed</span></span> <span class="source"><span>Bell Rock · Apr 2018</span></span></li><li class="row" id="massbuilds-1823" data-status="proposed" data-units="57" data-lat="42.44080" data-lon="-71.04343" data-words="william street ext. (high rock) maplewood highlands malden subdivision 18-48 single homes detached. 18-27 attached single family homes. "><svg style="color:#adadad" class="icon" role="img" aria-label="Proposed"><use href="#icon-proposed"/></svg><span class="headline"><a class="title" href="?project=massbuilds-1823">William Street Ext. (High Rock)</a> <span class="details">57 homes · proposed</span></span> <span class="source"><span>Maplewood Highlands · Apr 2018</span></span></li></ul></details><section class="how"><h3>Follow Malden</h3><p class="how-do"><a class="do primary" href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fbuildhousing.org%2Fmalden%2Fsay.ics" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M16 19h6"/><path d="M19 16v6"/></g></svg>Google Calendar</a><a class="do" href="webcal://buildhousing.org/malden/say.ics">Apple Calendar or Outlook</a><a class="do" href="/malden/say.ics" download>Download the file</a></p><p class="how-follow">Subscribing keeps Malden’s dates up to date by itself, so a deadline that moves moves with it; the downloaded file is a copy of today’s.</p><p class="follow"><a href="/malden/updates.xml">Or follow what changes in Malden by RSS →</a></p></section><footer><p class="foot-about"><b>Build Housing</b> follows new housing in Boston and the 12 towns around it, from first filing to move-in: 774 projects, 93,091 homes, 579 still in progress. It reads Boston’s Planning Department, Cambridge’s development log and MAPC’s MassBuilds every few hours, and lifts a project to the top of its town’s list each time it moves along.</p><nav class="site-links" aria-label="Build Housing"><div class="browse"><h2>Browse</h2><ul><li><a href="/">All projects</a></li><li><a href="/recent/">Recent updates</a></li><li><a href="/large/">Large projects</a></li><li><a href="/have-your-say/">Have your say</a></li></ul></div><div class="towns"><h2>Towns</h2><ul><li><a href="/boston/">Boston</a></li><li><a href="/arlington/">Arlington</a></li><li><a href="/brookline/">Brookline</a></li><li><a href="/cambridge/">Cambridge</a></li><li><a href="/chelsea/">Chelsea</a></li><li><a href="/everett/">Everett</a></li><li><a href="/malden/" aria-current="page">Malden</a></li><li><a href="/medford/">Medford</a></li><li><a href="/newton/">Newton</a></li><li><a href="/quincy/">Quincy</a></li><li><a href="/revere/">Revere</a></li><li><a href="/somerville/">Somerville</a></li><li><a href="/watertown/">Watertown</a></li></ul></div><div class="sources"><h2>Sources</h2><ul><li><a href="https://www.bostonplans.org/projects/development-projects">Boston Planning</a></li><li><a href="https://www.cambridgema.gov/CDD/factsandmaps/developmentlog">Cambridge log</a></li><li><a href="https://www.massbuilds.com/">MassBuilds</a></li></ul></div><div class="follow"><h2>Follow</h2><ul><li><a href="webcal://buildhousing.org/say.ics">Deadlines by calendar</a></li><li><a href="/updates.xml">Updates by RSS</a></li></ul></div></nav></footer><dialog class="project" aria-labelledby="panel-title">
+<div class="panel-tools"><button class="panel-back" type="button" aria-label="Previous project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="panel-on" type="button" aria-label="Next project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="panel-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6l-12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+<div class="panel-body">
+<div class="panel-image" hidden><img alt="" decoding="async" referrerpolicy="no-referrer"><p class="panel-credit"></p></div>
+<p class="panel-where"></p>
+<h2 class="panel-title" id="panel-title"></h2>
+<div class="panel-pills"></div>
+<p class="panel-note"></p>
+<div class="panel-change"><h3>Recently updated</h3><p></p></div>
+<div class="panel-say"><h3>Have your say</h3><ul></ul></div>
+<dl class="panel-facts"></dl>
+<div class="panel-about"></div>
+<div class="panel-foot"><a class="panel-source primary" target="_blank" rel="noopener"></a><span class="panel-break"></span><a class="panel-site" target="_blank" rel="noopener">Project site ↗</a><button class="panel-copy" type="button">Copy link</button><button class="panel-map" type="button">Show on map</button><a class="panel-wrong" target="_blank" rel="noopener">Suggest a correction</a><p class="panel-updated"></p></div>
+</div>
+</dialog><script>const REPO = "https://github.com/grahamhagenah/news";</script>
+<script>
+  {
+    const colors = {"proposed": "#adadad", "approved": "#e0a93b", "under construction": "#4c9be8", "complete": "#55b86a", "stalled": "#d65a50"}, labels = {"proposed": "Proposed", "approved": "Approved", "under construction": "Under construction", "complete": "Complete", "stalled": "Stalled"};
+    const rows = [...document.querySelectorAll(".row")];
+    const buttons = [...document.querySelectorAll(".filter button")];
+    const search = document.querySelector(".search");
+
+    // MapLibre is a megabyte, so it's fetched when the map is about to be seen, not with the page. Until then
+    // the page talks to this stand-in, which keeps what it's asked for and hands it over once the map is up.
+    const MAP_CSS = "https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.min.css";
+    const MAP_SRC = "https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.js";
+    const mapBox = document.getElementById("map");
+    const hintBox = Object.assign(document.createElement("div"), {className: "map-hint"});
+    // What the dots' colours mean, shown only in full screen, where there's room the page hasn't got.
+    const keyBox = Object.assign(document.createElement("div"), {className: "map-key"});
+    keyBox.innerHTML = Object.entries(labels).map(([status, label]) =>
+      `<span style="color:${colors[status]}"><i></i><span style="color:#bbb">${label}</span></span>`).join("");
+    mapBox.append(hintBox, keyBox);
+    const START = innerWidth < 544 ? 11 : 12;  // A phone's narrower map, one step further out.
+    const APART = 12;  // From here in, every project is its own dot; further out, they're grouped.
+    // A map given a few projects to fit (a town's, or a page of them) shows each of them, however close together.
+    const FITTED = mapBox.hasAttribute("data-fit");
+    const escape = text => text.replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"})[c]);
+    const radius = row => Math.max(2.2, Math.min(7, Math.sqrt(Math.max(0, +row.dataset.units) || 0) / 3.3));
+    // A number for each project, so a row and its dot can find each other and light up together.
+    const numbers = new Map(rows.map((row, at) => [row.id, at]));
+    let map = null, opening = null, lit = null;
+    const wanted = {shown: [], fit: null};  // What was asked for before the map was up.
+    const zoomHandlers = [];
+    // A city files a tower and the affordable homes that go with it as two projects at one address, and gives
+    // them the same point; stacked exactly, one dot hides under the other. Projects sharing a point are set a
+    // few metres apart around it, far enough to tell apart and click once the map is in close, and too little
+    // to move any of them off their street.
+    const TOGETHER = 18;  // Metres between the dots of projects filed at one address.
+    const placed = new Map();  // Where each project's dot goes, once that's been worked out.
+    const place = shown => {
+      const sharing = new Map();
+      for (const row of shown) {
+        const where = `${row.dataset.lat},${row.dataset.lon}`;
+        if (!sharing.has(where)) sharing.set(where, []);
+        sharing.get(where).push(row);
+      }
+      placed.clear();
+      for (const together of sharing.values()) {
+        for (const [at, row] of together.entries()) {
+          const lat = +row.dataset.lat, lon = +row.dataset.lon;
+          if (together.length === 1) { placed.set(row.id, [lon, lat]); continue; }
+          const way = at / together.length * 2 * Math.PI;
+          placed.set(row.id, [lon + Math.cos(way) * TOGETHER / (111320 * Math.cos(lat * Math.PI / 180)),
+                              lat + Math.sin(way) * TOGETHER / 111320]);
+        }
+      }
+    };
+    const at = row => placed.get(row.id) || [+row.dataset.lon, +row.dataset.lat];
+    // The smaller over the bigger: a higher sort key is drawn on top.
+    const geojson = shown => {
+      place(shown);
+      return {type: "FeatureCollection", features: shown.map(row => ({
+        type: "Feature", geometry: {type: "Point", coordinates: at(row)},
+        id: numbers.get(row.id),
+        properties: {row: row.id, name: row.querySelector(".title").textContent, homes: +row.dataset.units,
+                     color: colors[row.dataset.status], radius: radius(row), order: -row.dataset.units},
+      }))};
+    };
+    // A dot's note: its name, which opens its panel, and its homes and status.
+    const note = row => {
+      const status = row.dataset.status, box = document.createElement("div");
+      box.innerHTML = `<a href="?project=${row.id}" class="to-row">${escape(row.querySelector(".title").textContent)}</a><br>`
+        + `<span class="muted">${(+row.dataset.units).toLocaleString()} homes · ${labels[status].toLowerCase()}</span>`;
+      box.querySelector("a").addEventListener("click", event => { event.preventDefault(); openProject(row, true); });
+      return new maplibregl.Popup({offset: radius(row) + 4, maxWidth: "280px"})
+        .setLngLat(at(row)).setDOMContent(box).addTo(map);
+    };
+    const fitTo = shown => {
+      const bounds = new maplibregl.LngLatBounds();
+      for (const row of shown) bounds.extend(at(row));
+      map.fitBounds(bounds, {padding: 30, maxZoom: 13, animate: false});
+    };
+    const dotMap = {
+      container: mapBox,
+      zoom: () => map ? Math.round(map.getZoom()) + 1 : START,
+      onZoom: then => zoomHandlers.push(then),
+      draw: shown => {
+        wanted.shown = shown;
+        if (map && map.getSource("dots")) map.getSource("dots").setData(geojson(shown));
+      },
+      // Whether it's drawing groups rather than each project: further out than the view it opens at.
+      grouping: () => !!map && !FITTED && map.getZoom() < APART,
+      hint: text => { hintBox.textContent = text; },
+      fit: shown => { wanted.fit = shown; if (map && map.loaded()) fitTo(shown); },
+      // Asked to go somewhere before it's up (Show on map), the map is fetched there and then.
+      goTo: row => start().then(() => {
+        map.once("moveend", () => note(row));
+        map.flyTo({center: at(row), zoom: 15});
+      }),
+      light: (id, on) => {
+        if (id === null || id === undefined) return;
+        if (map && map.getSource("dots")) map.setFeatureState({source: "dots", id}, {lit: on});
+        const row = rows[id];
+        if (row) row.classList.toggle("near", on);
+      },
+    };
+    // The library, fetched once; then the map itself.
+    const library = () => new Promise((done, failed) => {
+      if (window.maplibregl) return done();
+      document.head.append(Object.assign(document.createElement("link"), {rel: "stylesheet", href: MAP_CSS}));
+      document.head.append(Object.assign(document.createElement("script"), {src: MAP_SRC, onload: done, onerror: failed}));
+    });
+    const start = () => opening || (opening = library().then(build));
+    function build() {
+      // Until the map has loaded (OpenFreeMap's servers are slow now and then), a note in its middle.
+      const loading = Object.assign(document.createElement("div"), {className: "map-loading", textContent: "Loading map…"});
+      mapBox.append(loading);
+      map = new maplibregl.Map({
+        container: mapBox, style: "https://tiles.openfreemap.org/styles/dark", center: [-71.08, 42.365],
+        zoom: START - 1, scrollZoom: false, dragRotate: false, pitchWithRotate: false, touchPitch: false,
+        attributionControl: {compact: true},
+      });
+      map.touchZoomRotate.disableRotation();
+      map.addControl(new maplibregl.NavigationControl({showCompass: false}), "top-left");
+      const wide = new maplibregl.FullscreenControl();
+      map.addControl(wide, "top-left");
+      // Full screen has no page to scroll past, so there the trackpad and wheel zoom the map; in the page they
+      // don't, where they'd take the scroll the reader meant for the page itself. The control tells us either
+      // way, full screen or the stand-in a phone gets.
+      wide.on("fullscreenstart", () => map.scrollZoom.enable());
+      wide.on("fullscreenend", () => map.scrollZoom.disable());
+      for (const then of zoomHandlers) map.on("zoomend", then);
+    // OpenFreeMap's dark style, recolored to read more easily: the land lifted a little from black and the water
+    // sunk below it in a deep blue, so the harbor and the rivers stand apart from the land; roads a shade or two
+    // lighter than the land, rather than black lines edged in gray, the bigger a little lighter (solid colors: a
+    // road is drawn in many overlapping pieces, and see-through ones add up to a bright web downtown); parks barely
+    // green; and the place names a little brighter than the style's.
+    const LAND = "#242426", WATER = "#0b1520";
+    const RECOLOR = {
+      "background": {"background-color": LAND},
+      "water": {"fill-color": WATER},
+      "waterway": {"line-color": WATER},
+      "landuse_residential": {"fill-opacity": 0},
+      "landcover_wood": {"fill-color": "#252b26"},
+      "landuse_park": {"fill-color": "#252b26"},
+      "building": {"fill-color": "#2c2c2e", "fill-outline-color": "#333335"},
+      "aeroway-area": {"fill-color": "#29292b"},
+      "aeroway-runway": {"line-color": "#303032"},
+      "aeroway-taxiway": {"line-color": "#2a2a2c"},
+      "aeroway-runway-casing": {"line-opacity": 0},
+      "road_area_pier": {"fill-color": LAND},
+      "road_pier": {"line-color": LAND},
+      "highway_path": {"line-color": "#28282a"},
+      "highway_minor": {"line-color": "#2a2a2c"},
+      "highway_major_casing": {"line-opacity": 0},
+      "highway_major_inner": {"line-color": "#303032"},
+      "highway_major_subtle": {"line-color": "#2d2d2f"},
+      "highway_motorway_casing": {"line-opacity": 0},
+      "highway_motorway_inner": {"line-color": "#373739"},
+      "highway_motorway_subtle": {"line-color": "#303032"},
+      "railway": {"line-color": "#2d2d2f"},
+      "railway_transit": {"line-color": "#2d2d2f"},
+      "railway_minor": {"line-color": "#2a2a2c"},
+      "railway_dashline": {"line-color": LAND},
+      "railway_transit_dashline": {"line-color": LAND},
+      "railway_minor_dashline": {"line-color": LAND},
+      "highway_name_other": {"text-color": "#6a6a6a", "text-halo-color": LAND},
+      "highway_name_motorway": {"text-color": "#7a7a7a"},
+      "water_name": {"text-color": "#5a7896", "text-halo-color": "rgba(0, 0, 0, 0)"},
+    };
+    for (const id of ["place_other", "place_suburb", "place_village", "place_town", "place_city", "place_city_large"]) {
+      RECOLOR[id] = {"text-color": "#9a9a9a", "text-halo-color": "rgba(36, 36, 38, .85)"};
+    }
+    // As soon as the style's read, before any of it is drawn, so its own colors never show. Any layer a later
+    // version of the style renames is left as the style has it.
+    map.on("style.load", () => {
+      for (const [id, paint] of Object.entries(RECOLOR)) {
+        if (map.getLayer(id)) for (const [name, value] of Object.entries(paint)) map.setPaintProperty(id, name, value);
+      }
+    });
+      map.on("load", () => {
+        loading.remove();
+        // The credits folded to their ⓘ, which the map's terms ask be on it; MapLibre opens them at first on a wide map.
+        const credits = mapBox.querySelector(".maplibregl-ctrl-attrib");
+        if (credits) { credits.classList.remove("maplibregl-compact-show"); credits.removeAttribute("open"); }
+        // Further out than APART, projects near each other are gathered into one group; from there in, and on a
+        // fitted map, each keeps its own dot. A project on its own stays a dot at every zoom either way.
+        map.addSource("dots", {
+          type: "geojson", data: geojson(wanted.shown),
+          cluster: !FITTED, clusterMaxZoom: APART - 1, clusterRadius: 30, clusterMinPoints: 3,
+          clusterProperties: {homes: ["+", ["get", "homes"]]},
+        });
+        map.addLayer({
+          id: "dots", type: "circle", source: "dots", filter: ["!", ["has", "point_count"]],
+          layout: {"circle-sort-key": ["get", "order"]},
+          // A ring in the status's color around a faint fill of the same; the one under the pointer, or under it
+          // in the list, brighter and thicker.
+          paint: {"circle-color": ["get", "color"],
+                  "circle-radius": ["+", ["get", "radius"], ["case", ["boolean", ["feature-state", "lit"], false], 2, 0]],
+                  "circle-opacity": ["case", ["boolean", ["feature-state", "lit"], false], .5, .22],
+                  "circle-stroke-color": ["get", "color"],
+                  "circle-stroke-width": ["case", ["boolean", ["feature-state", "lit"], false], 2.5, 1.5]},
+        });
+        // Close in, the bigger projects say what they are: at street level every one of them, further out only
+        // the largest, so the names never crowd the map.
+        map.addLayer({
+          id: "dot-names", type: "symbol", source: "dots", minzoom: 12.5,
+          filter: ["all", ["!", ["has", "point_count"]],
+                   [">=", ["get", "homes"], ["step", ["zoom"], 300, 13.5, 150, 14.5, 50, 15.5, 0]]],
+          layout: {"text-field": ["get", "name"], "text-font": ["Noto Sans Regular"], "text-size": 11,
+                   "text-offset": [0, 1.1], "text-anchor": "top", "text-max-width": 9, "text-optional": true,
+                   "symbol-sort-key": ["-", 0, ["get", "homes"]]},
+          paint: {"text-color": "#c9c9c9", "text-halo-color": "#242426", "text-halo-width": 1.4},
+        });
+        // A group: a ring in the map's own gray, as wide as the homes in it, saying how many they come to.
+        map.addLayer({
+          id: "groups", type: "circle", source: "dots", filter: ["has", "point_count"],
+          paint: {"circle-color": "#101011", "circle-opacity": .82,
+                  "circle-radius": ["interpolate", ["linear"], ["get", "homes"], 0, 10, 500, 13, 3000, 19],
+                  "circle-stroke-color": "#9a9a9a", "circle-stroke-width": 1.5},
+        });
+        map.addLayer({
+          id: "group-homes", type: "symbol", source: "dots", filter: ["has", "point_count"],
+          layout: {
+            "text-field": ["case", [">=", ["get", "homes"], 1000],
+                           ["concat", ["number-format", ["/", ["get", "homes"], 1000], {"max-fraction-digits": 1}], "k"],
+                           ["to-string", ["get", "homes"]]],
+            "text-font": ["Noto Sans Regular"], "text-size": 11, "text-allow-overlap": true,
+          },
+          paint: {"text-color": "#e2e2e2"},
+        });
+        // A group opens: the map goes in until its projects come apart.
+        map.on("click", "groups", event => {
+          const group = event.features[0];
+          map.getSource("dots").getClusterExpansionZoom(group.properties.cluster_id).then(zoom => {
+            map.easeTo({center: group.geometry.coordinates, zoom: Math.max(zoom, APART)});
+          }).catch(() => map.easeTo({center: group.geometry.coordinates, zoom: APART}));
+        });
+        map.on("mouseenter", "groups", () => { map.getCanvas().style.cursor = "pointer"; });
+        map.on("mouseleave", "groups", () => { map.getCanvas().style.cursor = ""; });
+        if (wanted.fit && wanted.fit.length) fitTo(wanted.fit);
+        // The page asked what the map was drawing before there was a map: now there is, it's asked again.
+        for (const then of zoomHandlers) then();
+        map.on("click", "dots", event => note(document.getElementById(event.features[0].properties.row)));
+        // The dot under the pointer and its row, lit together, and the same the other way about.
+        map.on("mousemove", "dots", event => {
+          const id = event.features[0].id;
+          if (id === lit) return;
+          dotMap.light(lit, false);
+          dotMap.light(lit = id, true);
+        });
+        map.on("mouseleave", "dots", () => { dotMap.light(lit, false); lit = null; map.getCanvas().style.cursor = ""; });
+        map.on("mouseenter", "dots", () => { map.getCanvas().style.cursor = "pointer"; });
+      });
+    }
+    // Fetched as the map comes near the window, so a reader who never reaches it never waits for it.
+    if (window.IntersectionObserver) {
+      const watcher = new IntersectionObserver(seen => {
+        if (seen.some(one => one.isIntersecting)) { watcher.disconnect(); start(); }
+      }, {rootMargin: "300px"});
+      watcher.observe(mapBox);
+    } else start();
+    const bySize = [...rows].sort((a, b) => b.dataset.units - a.dataset.units);
+    // Every project shows at every zoom: at the zooms a reader starts at as its own dot, and further out, where
+    // the whole region is in view and the dots would be a carpet, gathered into groups saying how many homes.
+    // Recent updates, Large projects and Have your say fit their few projects in view instead of opening wide.
+    const fitting = dotMap.container.hasAttribute("data-fit");
+    let searching = false, pinned = null;  // Neither changes what's drawn now; the map holds them all.
+    const draw = () => {
+      // The biggest first, so the smaller are drawn over them and a small project beside a big one can be clicked.
+      dotMap.draw(bySize.filter(row => !row.hidden || row === pinned));
+      dotMap.hint(dotMap.grouping() ? "Projects grouped · zoom in to separate them" : "Bigger dots, more homes");
+    };
+    dotMap.onZoom(draw);
+    const show = () => {
+      const chosen = buttons.find(button => button.getAttribute("aria-pressed") === "true").dataset.show;
+      const words = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      searching = words.length > 0;
+      pinned = null;
+      for (const row of rows) {
+        const status = row.dataset.status;
+        const fits = (chosen === "all" || (chosen === "active" ? status !== "complete" : status === chosen))
+          && words.every(word => row.dataset.words.includes(word));
+        row.hidden = !fits;
+      }
+      draw();
+      // The page's own lists, not a map's credits (MapLibre's are a <details> too).
+      for (const details of document.querySelectorAll("main > details")) {
+        const showing = [...details.querySelectorAll(".row:not([hidden])")];
+        const homes = showing.reduce((sum, row) => sum + +row.dataset.units, 0);
+        details.querySelector(".count").textContent = showing.length
+          ? `${showing.length} project${showing.length === 1 ? "" : "s"} · ${homes.toLocaleString()} homes` : "none";
+        if (words.length && showing.length) details.open = true;
+      }
+    };
+    for (const button of buttons) button.addEventListener("click", () => {
+      buttons.forEach(other => other.setAttribute("aria-pressed", other === button));
+      show();
+    });
+    search.addEventListener("input", show);
+    // The faint line under a list's heading while it's stuck at the top: the one there whose list is still on
+    // screen. Checked as the page scrolls, once a frame at most, and when a list opens or closes.
+    {
+      const headings = [...document.querySelectorAll("main > details > summary")];
+      let queued = false;
+      const mark = () => {
+        queued = false;
+        for (const heading of headings) {
+          const list = heading.parentElement.getBoundingClientRect();
+          heading.classList.toggle("stuck", heading.parentElement.open && list.top < 0 && list.bottom > heading.offsetHeight);
+        }
+      };
+      const soon = () => { if (!queued) { queued = true; requestAnimationFrame(mark); } };
+      addEventListener("scroll", soon, {passive: true});
+      for (const heading of headings) heading.parentElement.addEventListener("toggle", soon);
+      mark();
+    }
+    show();
+    // Recent updates' few projects, wherever they are, all in view at once.
+    if (fitting && rows.length) dotMap.fit(rows);
+
+    // A project's panel: opened from its row or its dot, with its id in the address so it can be linked to.
+    // Their details are a file of their own (the same for every page, so a browser fetches it once), asked for
+    // as a project is about to be opened rather than with the page.
+    let panels = null, asking = null;
+    const details = () => asking || (asking = fetch("/panels.json").then(answer => answer.json())
+      .then(all => (panels = all)));
+    // Pointing at a row is a good sign one's about to be opened; failing that, once the page is quiet.
+    addEventListener("pointerover", event => { if (event.target.closest(".row, .fresh-one")) details(); },
+                     {once: true, passive: true});
+    (window.requestIdleCallback || (then => setTimeout(then, 2500)))(details);
+    const view = document.querySelector("dialog.project");
+    const part = name => view.querySelector(".panel-" + name);
+    const make = (tag, props, ...children) => { const el = Object.assign(document.createElement(tag), props); el.append(...children); return el; };
+    let shown = null, pushed = false;
+    // Through the list from inside the panel: what the filter and search show, town by town, in the page's order.
+    const beside = step => {
+      const showing = rows.filter(row => !row.hidden);
+      const at = showing.indexOf(shown);
+      return at < 0 ? null : showing[at + step] || null;
+    };
+    function fill(row) {
+      shown = row;
+      const p = panels[row.id];
+      rows.forEach(other => other.classList.toggle("lit", other === row));
+      part("where").textContent = [p.town, p.neighborhood].filter(Boolean).join(" · ");
+      part("title").textContent = p.name;
+      part("pills").replaceChildren(make("span", {className: "panel-pill"}, row.querySelector(".icon").cloneNode(true), labels[p.status]),
+        make("span", {className: "panel-pill"}, p.units.toLocaleString() + (p.units === 1 ? " home" : " homes")));
+      part("note").textContent = p.note;
+      // Have your say: each open comment period and upcoming meeting, linking to where to comment or to join.
+      part("change").hidden = !p.change.length;
+      part("change").querySelector("p").textContent = p.change[0] || "";
+      part("say").hidden = !p.say.length;
+      // Each one says where a comment goes, under it: a date on its own leaves a reader nowhere to go.
+      const told = new Set();  // The same words under each of a project's three meetings would only be noise.
+      part("say").querySelector("ul").replaceChildren(...p.say.map(([text, link, kind, how]) => {
+        const first = how && !told.has(how);
+        if (how) told.add(how);
+        return make("li", {},
+          make("a", {href: link, target: "_blank", rel: "noopener",
+                     textContent: text + (kind === "comment" ? " · Comment ↗" : " ↗")}),
+          ...(first ? [make("p", {className: "say-how", textContent: how})] : []));
+      }));
+      part("facts").replaceChildren(...p.facts.flatMap(([label, value]) => [make("dt", {textContent: label}), make("dd", {textContent: value})]));
+      part("about").replaceChildren(...p.description.split(/\n+/).map(text => text.trim()).filter(Boolean)
+        .map(text => make("p", {textContent: text})));
+      const image = part("image"), img = image.querySelector("img");
+      image.classList.remove("loaded");
+      image.hidden = !p.image;
+      view.classList.toggle("shows-picture", !!p.image);
+      if (p.image) img.src = p.image; else img.removeAttribute("src");
+      const credit = image.querySelector(".panel-credit");
+      credit.textContent = p.credit || "";
+      credit.hidden = !p.credit;
+      // The same picture again, already loaded, fires no load event of its own.
+      if (p.image && img.complete && img.naturalWidth) image.classList.add("loaded");
+      part("source").hidden = !p.link;
+      part("source").href = p.link;
+      part("source").textContent = (p.origin ? "View on " + p.origin : "View source") + " ↗";
+      part("copy").textContent = "Copy link";
+      // A correction, as an issue with the project named and the fields a note can set; the site says nothing
+      // until it's been judged against the city's own record.
+      part("wrong").href = REPO + "/issues/new?" + new URLSearchParams({
+        title: `Note ${shown.id}`,
+        labels: "correction",
+        body: [`<!-- ${p.name} · ${location.origin}/p/${shown.id}/ -->`, "",
+               "What’s wrong, or what’s new:", "", "", "",
+               "status: (proposed, approved, under construction, complete, stalled — blank keeps it as it is)",
+               "date: (2026-09-22, optional)", "link: (optional)", ""].join("\n"),
+      });
+      part("site").hidden = !p.site;
+      part("site").href = p.site;
+      part("updated").textContent = p.updated ? "Last update " + p.updated : "";
+      part("body").scrollTop = 0;
+      part("back").disabled = !beside(-1);
+      part("on").disabled = !beside(1);
+    }
+    const img = part("image").querySelector("img");
+    img.addEventListener("load", () => part("image").classList.add("loaded"));
+    img.addEventListener("error", () => {
+      if (!img.getAttribute("src")) return;
+      part("image").hidden = true;
+      view.classList.remove("shows-picture");
+    });
+    // This page's address with a project's panel open in it (?project=<id>), or with none.
+    const withProject = id => {
+      const url = new URL(location.href);
+      if (id) url.searchParams.set("project", id); else url.searchParams.delete("project");
+      url.hash = "";
+      return url.pathname + url.search;
+    };
+    async function openProject(row, push) {
+      await details();
+      fill(row);
+      if (push) { history.pushState(null, "", withProject(row.id)); pushed = true; } else history.replaceState(null, "", withProject(row.id));
+      if (!view.open) { view.showModal(); document.body.classList.add("viewing"); }
+    }
+    const closeProject = () => { if (view.open) view.close(); };
+    // Closing takes its address away: Back, where opening it added one; otherwise in place.
+    view.addEventListener("close", () => {
+      document.body.classList.remove("viewing");
+      if (pushed) { pushed = false; history.back(); } else history.replaceState(null, "", withProject(null));
+    });
+    const step = where => { const near = beside(where); if (near) openProject(near, false); };
+    part("close").addEventListener("click", closeProject);
+    // The panel's address, which is the project's, to share: the whole of it, this page's and ?project=.
+    part("copy").addEventListener("click", async () => {
+      // The share page's address, not this one's: shown in a message or a post, it carries the project's own
+      // picture and words, and whoever opens it lands back here, on its panel.
+      const link = new URL("/p/" + shown.id + "/", location.href).href;
+      try { await navigator.clipboard.writeText(link); part("copy").textContent = "Copied"; }
+      catch { part("copy").textContent = "Couldn’t copy"; }
+    });
+    // Esc, wherever focus is: a panel opened by a link as the page loads has nothing in it focused, and the
+    // browser's own Esc for a dialog waits for focus inside it.
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && view.open) { event.preventDefault(); closeProject(); }
+    });
+    part("back").addEventListener("click", () => step(-1));
+    part("on").addEventListener("click", () => step(1));
+    view.addEventListener("keydown", event => {
+      const where = {ArrowLeft: -1, ArrowRight: 1}[event.key];
+      if (!where || event.metaKey || event.ctrlKey || event.altKey) return;
+      event.preventDefault();
+      step(where);
+    });
+    // A click outside it, on the backdrop, closes it; a press that began inside and drifted out doesn't.
+    let pressedIn = false;
+    view.addEventListener("pointerdown", event => { pressedIn = event.target !== view; });
+    view.addEventListener("click", event => { if (event.target === view && !pressedIn) closeProject(); });
+    // Its dot, found and opened on the map.
+    part("map").addEventListener("click", () => {
+      const row = shown;
+      closeProject();
+      pinned = row;
+      draw();
+      dotMap.container.scrollIntoView({behavior: "smooth", block: "center"});
+      dotMap.goTo(row);
+    });
+    // Pointing at a row lights its dot on the map, as pointing at the dot lights the row.
+    for (const [at, row] of rows.entries()) {
+      row.addEventListener("pointerenter", () => dotMap.light && dotMap.light(at, true));
+      row.addEventListener("pointerleave", () => dotMap.light && dotMap.light(at, false));
+    }
+    // Clicking anywhere on a row opens it; with a modifier key, its address opens in a new tab as usual.
+    for (const row of rows) row.addEventListener("click", event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey) return;
+      event.preventDefault();
+      openProject(row, true);
+    });
+    // A link to a project (?project=<id>, or #<id> from before) opens its panel, with its town's list open behind
+    // it; Back and Forward follow the address.
+    const fromAddress = async () => {
+      const id = new URLSearchParams(location.search).get("project") || decodeURIComponent(location.hash.slice(1));
+      const row = id && document.getElementById(id);
+      if (row && row.matches("details")) {  // A town's, from an old link: its list, open.
+        if (view.open) { pushed = false; view.close(); }
+        row.open = true;
+        row.scrollIntoView({block: "start"});
+      } else if (row && row.classList.contains("row")) {
+        row.closest("details").open = true;
+        if (view.open) { await details(); fill(row); } else openProject(row, false);
+      } else if (view.open) { pushed = false; view.close(); }
+    };
+    addEventListener("popstate", () => { pushed = false; fromAddress(); });
+    fromAddress();
+  }
+</script>
+<script>
+  for (const line of document.querySelectorAll(".fresh-one[href]")) {
+    line.addEventListener("click", event => {
+      const row = document.getElementById(new URLSearchParams(line.getAttribute("href")).get("project"));
+      if (!row || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      row.click();
+    });
+  }
+</script>
+</main>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 16 16" aria-hidden="true"><path
+  d="M8 13V3.5M3.5 8L8 3.5 12.5 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+  stroke-linejoin="round"/></svg></button>
+<script>
+  {
+    const button = document.querySelector(".to-top");
+    const place = () => button.classList.toggle("shown", scrollY > innerHeight);
+    addEventListener("scroll", place, {passive: true});
+    place();
+    button.addEventListener("click", event => {
+      const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      scrollTo({top: 0, behavior: still ? "auto" : "smooth"});
+      if (event.detail === 0) document.querySelector("header a")?.focus({preventScroll: true});
+    });
+  }
+</script>
+<script>
+  for (const t of document.querySelectorAll("time[datetime]")) {
+    const s = Math.max(60, (Date.now() - new Date(t.dateTime)) / 1000);
+    const age = s < 3600 ? Math.round(s / 60) + "m" : s < 86400 ? Math.round(s / 3600) + "h" : Math.round(s / 86400) + "d";
+    t.textContent = t.matches(".updated, .ago") ? age + " ago" : age;
+  }
+</script>
+<script>
+  for (const title of document.querySelectorAll(".headline .title")) {
+    title.addEventListener("mouseenter", () => {
+      const headline = title.closest(".headline");
+      headline.classList.toggle("truncated", title.scrollWidth > title.clientWidth);
+      const preview = headline.querySelector(".preview");
+      if (preview) preview.classList.toggle("above", title.getBoundingClientRect().bottom + preview.offsetHeight + 24 > innerHeight);
+    });
+  }
+</script>
+<script>
+  {
+    const search = document.querySelector(".search");
+    if (search) document.addEventListener("keydown", event => {
+      if (event.key === "/" && document.activeElement !== search && !event.metaKey && !event.ctrlKey
+          && search.offsetParent && !document.querySelector("dialog[open]")) {
+        event.preventDefault();
+        search.focus();
+      } else if (event.key === "Escape" && document.activeElement === search && search.value) {
+        search.value = "";
+        search.dispatchEvent(new Event("input"));
+      }
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Build Housing//buildhousing.org//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Build Housing: have your say in Boston
+X-WR-CALDESC:Comment deadlines and public meetings on new housing in Boston
+ \, from https://buildhousing.org/
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:boston-3683-comment-20261005@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Comments close: 41 Berkeley Street
+DESCRIPTION:312 homes\, proposed\, South End. Comment on the form at the fo
+ ot of the city’s project page\, or by email to the planner it names\, be
+ fore the day is out.\nhttps://buildhousing.org/p/boston-3683/
+URL:https://buildhousing.org/p/boston-3683/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-3782-meeting-20261007@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART:20261007T220000Z
+DTEND:20261008T000000Z
+SUMMARY:One Mystic Avenue: Discussion of 121B Agreement for One Mystic Aven
+ ue
+DESCRIPTION:423 homes\, approved\, Charlestown. Open to anyone\; the city
+ ’s calendar entry says where it is and how to join\, and comments can go
+  to the project page as well.\nhttps://buildhousing.org/p/boston-3782/
+URL:https://buildhousing.org/p/boston-3782/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-3782-comment-20261014@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Comments close: One Mystic Avenue
+DESCRIPTION:423 homes\, approved\, Charlestown. Comment on the form at the 
+ foot of the city’s project page\, or by email to the planner it names\, 
+ before the day is out.\nhttps://buildhousing.org/p/boston-3782/
+URL:https://buildhousing.org/p/boston-3782/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4275-comment-20261013@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Comments close: 165 Park Drive
+DESCRIPTION:117 homes\, proposed\, Fenway. Comment on the form at the foot 
+ of the city’s project page\, or by email to the planner it names\, befor
+ e the day is out.\nhttps://buildhousing.org/p/boston-4275/
+URL:https://buildhousing.org/p/boston-4275/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4324-meeting-20260928@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART:20260928T220000Z
+DTEND:20260929T000000Z
+SUMMARY:83 Leo M. Birmingham Parkway: Allston/Brighton 121B Project Meeting
+DESCRIPTION:333 homes\, approved\, Brighton. Open to anyone\; the city’s 
+ calendar entry says where it is and how to join\, and comments can go to t
+ he project page as well.\nhttps://buildhousing.org/p/boston-4324/
+URL:https://buildhousing.org/p/boston-4324/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4324-comment-20261014@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Comments close: 83 Leo M. Birmingham Parkway
+DESCRIPTION:333 homes\, approved\, Brighton. Comment on the form at the foo
+ t of the city’s project page\, or by email to the planner it names\, bef
+ ore the day is out.\nhttps://buildhousing.org/p/boston-4324/
+URL:https://buildhousing.org/p/boston-4324/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4411-meeting-20260928@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART:20260928T220000Z
+DTEND:20260929T000000Z
+SUMMARY:Allston Yards Building D: Allston/Brighton 121B Project Meeting
+DESCRIPTION:257 homes\, approved\, Allston. Open to anyone\; the city’s c
+ alendar entry says where it is and how to join\, and comments can go to th
+ e project page as well.\nhttps://buildhousing.org/p/boston-4411/
+URL:https://buildhousing.org/p/boston-4411/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4411-comment-20261014@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Comments close: Allston Yards Building D
+DESCRIPTION:257 homes\, approved\, Allston. Comment on the form at the foot
+  of the city’s project page\, or by email to the planner it names\, befo
+ re the day is out.\nhttps://buildhousing.org/p/boston-4411/
+URL:https://buildhousing.org/p/boston-4411/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4429-meeting-20260928@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART:20260928T220000Z
+DTEND:20260929T000000Z
+SUMMARY:22-24 Pratt Street: Allston/Brighton 121B Project Meeting
+DESCRIPTION:318 homes\, approved\, Allston. Open to anyone\; the city’s c
+ alendar entry says where it is and how to join\, and comments can go to th
+ e project page as well.\nhttps://buildhousing.org/p/boston-4429/
+URL:https://buildhousing.org/p/boston-4429/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4429-comment-20261014@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Comments close: 22-24 Pratt Street
+DESCRIPTION:318 homes\, approved\, Allston. Comment on the form at the foot
+  of the city’s project page\, or by email to the planner it names\, befo
+ re the day is out.\nhttps://buildhousing.org/p/boston-4429/
+URL:https://buildhousing.org/p/boston-4429/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-2616-comment-20261009@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Comments close: 425 Border Street
+DESCRIPTION:16 homes\, proposed\, East Boston. Comment on the form at the f
+ oot of the city’s project page\, or by email to the planner it names\, b
+ efore the day is out.\nhttps://buildhousing.org/p/boston-2616/
+URL:https://buildhousing.org/p/boston-2616/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4618-comment-20261002@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Comments close: Reserved Channel Development
+DESCRIPTION:1\,050 homes\, proposed\, South Boston Waterfront. Comment on t
+ he form at the foot of the city’s project page\, or by email to the plan
+ ner it names\, before the day is out.\nhttps://buildhousing.org/p/boston-4
+ 618/
+URL:https://buildhousing.org/p/boston-4618/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4857-comment-20260930@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Comments close: 25 Tolman Street
+DESCRIPTION:17 homes\, proposed\, Dorchester. Comment on the form at the fo
+ ot of the city’s project page\, or by email to the planner it names\, be
+ fore the day is out.\nhttps://buildhousing.org/p/boston-4857/
+URL:https://buildhousing.org/p/boston-4857/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4929-meeting-20260928@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART:20260928T220000Z
+DTEND:20260929T000000Z
+SUMMARY:25 Supertest Street: IAG Meeting
+DESCRIPTION:108 homes\, proposed\, Charlestown. Open to anyone\; the city
+ ’s calendar entry says where it is and how to join\, and comments can go
+  to the project page as well.\nhttps://buildhousing.org/p/boston-4929/
+URL:https://buildhousing.org/p/boston-4929/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-4929-meeting-20260929@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART:20260929T220000Z
+DTEND:20260930T000000Z
+SUMMARY:25 Supertest Street: Public Meeting
+DESCRIPTION:108 homes\, proposed\, Charlestown. Open to anyone\; the city
+ ’s calendar entry says where it is and how to join\, and comments can go
+  to the project page as well.\nhttps://buildhousing.org/p/boston-4929/
+URL:https://buildhousing.org/p/boston-4929/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-5042-comment-20261026@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Comments close: 79 Essex Street
+DESCRIPTION:47 homes\, proposed\, Chinatown. Comment on the form at the foo
+ t of the city’s project page\, or by email to the planner it names\, bef
+ ore the day is out.\nhttps://buildhousing.org/p/boston-5042/
+URL:https://buildhousing.org/p/boston-5042/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-5057-meeting-20260929@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART:20260929T220000Z
+DTEND:20260930T000000Z
+SUMMARY:59 Meridian Street: Public Meeting
+DESCRIPTION:15 homes\, proposed\, East Boston. Open to anyone\; the city’
+ s calendar entry says where it is and how to join\, and comments can go to
+  the project page as well.\nhttps://buildhousing.org/p/boston-5057/
+URL:https://buildhousing.org/p/boston-5057/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-5057-comment-20261008@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:Comments close: 59 Meridian Street
+DESCRIPTION:15 homes\, proposed\, East Boston. Comment on the form at the f
+ oot of the city’s project page\, or by email to the planner it names\, b
+ efore the day is out.\nhttps://buildhousing.org/p/boston-5057/
+URL:https://buildhousing.org/p/boston-5057/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-5058-comment-20260928@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Comments close: 105 Beach Street
+DESCRIPTION:15 homes\, proposed\, Leather District. Comment on the form at 
+ the foot of the city’s project page\, or by email to the planner it name
+ s\, before the day is out.\nhttps://buildhousing.org/p/boston-5058/
+URL:https://buildhousing.org/p/boston-5058/
+END:VEVENT
+BEGIN:VEVENT
+UID:boston-5059-comment-20261026@buildhousing.org
+DTSTAMP:20260926T213214Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Comments close: 140 Providence Street
+DESCRIPTION:476 homes\, proposed\, Back Bay. Comment on the form at the foo
+ t of the city’s project page\, or by email to the planner it names\, bef
+ ore the day is out.\nhttps://buildhousing.org/p/boston-5059/
+URL:https://buildhousing.org/p/boston-5059/
+END:VEVENT
+END:VCALENDAR
