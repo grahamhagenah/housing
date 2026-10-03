@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Build Housing//buildhousing.org//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Build Housing: have your say in Everett
+X-WR-CALDESC:Comment deadlines and public meetings on new housing in Everet
+ t\, from https://buildhousing.org/
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+END:VCALENDAR
