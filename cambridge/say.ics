@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Build Housing//buildhousing.org//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Build Housing: have your say in Cambridge
+X-WR-CALDESC:Comment deadlines and public meetings on new housing in Cambri
+ dge\, from https://buildhousing.org/
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:cambridge-801-meeting-20261015@buildhousing.org
+DTSTAMP:20261010T160214Z
+DTSTART:20261015T220000Z
+DTEND:20261016T000000Z
+SUMMARY:2400 Massachusetts Avenue: 2400 Mass Ave Kickoff Meeting - Virtual
+DESCRIPTION:56 homes\, approved\, North Cambridge. The Redevelopment Author
+ ity’s own meeting\; its page says how to join.\nhttps://buildhousing.org
+ /p/cambridge-801/
+URL:https://buildhousing.org/p/cambridge-801/
+END:VEVENT
+END:VCALENDAR
